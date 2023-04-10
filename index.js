@@ -1,14 +1,8 @@
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+const scrollCarousel = (e, scrollRight) => {
+  const slider = e.target.parentNode.querySelector('.slides-container')
+  const sliderWidth = slider.clientWidth;
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+  slider.scrollLeft += scrollRight
+    ? sliderWidth
+    : -sliderWidth;
+}

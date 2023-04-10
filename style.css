@@ -153,12 +153,12 @@ h2, h3, h4, h5, h6 {
   opacity: 0.8;
 }
 
-#slide-arrow-prev {
+.slide-arrow-prev {
   left: 5px;
   padding: 0 2px 2px 0;
 }
 
-#slide-arrow-next {
+.slide-arrow-next {
   right: 5px;
   padding: 0 0 2px 2px;
 }
